@@ -1,0 +1,14 @@
+model:
+  provider: openrouter
+  default: google/gemma-4-26b-a4b-it:free
+
+telegram:
+  require_mention: true
+  exclusive_bot_mentions: true
+  bots_require_mention: true
+
+gateway:
+  streaming:
+    enabled: true
+    transport: edit
+

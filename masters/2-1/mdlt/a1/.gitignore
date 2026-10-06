@@ -1,0 +1,49 @@
+# Local environment files (keep sanitized templates).
+.env
+.env.*
+*.env
+*.env.*
+!.env.example
+!.env.*.example
+!*.env.example
+!*.env.*.example
+
+# Credentials and machine-local configuration.
+secrets.*
+credentials.*
+*.secret
+*.secrets
+*.local
+*.local.*
+!secrets.example
+!secrets.*.example
+!credentials.example
+!credentials.*.example
+!*.secret.example
+!*.secrets.example
+!*.local.example
+!*.local.*.example
+
+# Private keys and certificate bundles.
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Logs, caches, virtual environments, and editor/OS metadata.
+*.log
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
