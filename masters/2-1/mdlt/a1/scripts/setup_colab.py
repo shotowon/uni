@@ -51,7 +51,7 @@ def main() -> None:
     if len(set(tokens.values())) != 3 or any(":" not in token for token in tokens.values()):
         raise SystemExit("Supply three different BotFather tokens.")
     openrouter_key = ask("OpenRouter API key", secret=True)
-    model = ask("OpenRouter model ID", default="google/gemini-2.5-flash")
+    model = ask("OpenRouter model ID", default="nvidia/nemotron-3-ultra-550b-a55b:free")
 
     hermes_root = Path.home() / ".hermes" / "profiles"
     for profile in PROFILES:
